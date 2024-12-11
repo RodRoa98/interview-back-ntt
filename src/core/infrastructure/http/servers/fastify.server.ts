@@ -16,7 +16,7 @@ export class FastifyServer {
 
     public start(port: number) {
         try {
-            this.app.listen({ port });
+            this.app.listen({ port, host: '0.0.0.0' });
             console.log(`Server running on port: ${port}`);
         } catch (error) {
             console.error('Error starting server', error);
