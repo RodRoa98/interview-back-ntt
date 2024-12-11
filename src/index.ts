@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { mongooseConnect } from "./core/infrastructure/database/connection";
 import { FastifyServer } from "./core/infrastructure/http/servers/fastify.server";
 
