@@ -1,0 +1,66 @@
+{
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "displayName": "NodeJS NTT",
+    "roots": [
+        "."
+    ],
+    "modulePaths": [
+        "."
+    ],
+    "moduleNameMapper": {},
+    "setupFilesAfterEnv": [
+        "./jest.setup.ts"
+    ],
+    "moduleFileExtensions": [
+        "js",
+        "mjs",
+        "cjs",
+        "jsx",
+        "ts",
+        "tsx",
+        "json",
+        "node",
+        "d.ts"
+    ],
+    "testPathIgnorePatterns": [
+        "node_modules",
+        ".build",
+        ".dist",
+        "coverage",
+        ".esbuild"
+    ],
+    "modulePathIgnorePatterns": [
+        "node_modules",
+        ".build",
+        ".dist",
+        "coverage",
+        ".esbuild",
+        "./.build",
+        ".serverless"
+    ],
+    "verbose": true,
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+        "**/application/usecases/**",
+        "!**/node_modules/**",
+        "!**/coverage/**"
+    ],
+    "coverageProvider": "babel",
+    "coverageThreshold": {
+        "global": {
+            "branches": 85,
+            "functions": 85,
+            "lines": 85,
+            "statements": 85
+        }
+    },
+    "coveragePathIgnorePatterns": [
+        "node_modules",
+        ".dist/*",
+        ".build/*",
+        "coverage",
+        ".esbuild"
+    ]
+}
